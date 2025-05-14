@@ -1,0 +1,6 @@
+This is a sample text file that can be encoded to Base64.
+It contains multiple lines to demonstrate the multi-line encoding capabilities.
+
+Special characters: !@#$%^&*()_+
+Numbers: 1234567890
+Spaces and tabs:    	    

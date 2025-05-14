@@ -1,0 +1,1 @@
+# No external dependencies required as base64 and argparse are part of the standard library

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "b64tool"
+version = "1.0.0"
+authors = [
+    {name = "Sebastian Peters", email = "sebastian.peters@itsc.de"},
+]
+description = "A tool for encoding and decoding text using Base64"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+b64tool = "b64tool:main"
+
+[tool.setuptools]
+py-modules = ["b64tool"]
