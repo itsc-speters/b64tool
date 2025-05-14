@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='b64tool',
-    version='1.0',
+    version='1.1.0',
     author='Sebastian Peters',
     author_email='sebastian.peters@itsc.de',
     description='A tool for encoding and decoding text using Base64',

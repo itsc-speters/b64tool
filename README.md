@@ -33,21 +33,27 @@ chmod +x b64tool.py
 ### If installed with pip
 
 ```bash
-# To encode text
+# To encode text (full command)
 b64tool encode "Hello World"
 
-# To decode Base64
+# To encode text (shortcut)
+b64tool e "Hello World"
+
+# To decode Base64 (full command)
 b64tool decode "SGVsbG8gV29ybGQ="
 
+# To decode Base64 (shortcut)
+b64tool d "SGVsbG8gV29ybGQ="
+
 # To encode from a file
-b64tool encode -f input.txt
+b64tool e -f input.txt
 
 # To decode from a file
-b64tool decode -f encoded.txt
+b64tool d -f encoded.txt
 
 # To save output to a file
-b64tool encode "Hello World" -o encoded.txt
-b64tool decode -f encoded.txt -o decoded.txt
+b64tool e "Hello World" -o encoded.txt
+b64tool d -f encoded.txt -o decoded.txt
 ```
 
 Alternatively, you can also run it as a Python module:
@@ -59,21 +65,27 @@ python -m b64tool [options]
 ### If running directly
 
 ```bash
-# To encode text
+# To encode text (full command)
 ./b64tool.py encode "Hello World"
 
-# To decode Base64
+# To encode text (shortcut)
+./b64tool.py e "Hello World"
+
+# To decode Base64 (full command)
 ./b64tool.py decode "SGVsbG8gV29ybGQ="
 
+# To decode Base64 (shortcut)
+./b64tool.py d "SGVsbG8gV29ybGQ="
+
 # To encode from a file
-./b64tool.py encode -f input.txt
+./b64tool.py e -f input.txt
 
 # To decode from a file
-./b64tool.py decode -f encoded.txt
+./b64tool.py d -f encoded.txt
 
 # To save output to a file
-./b64tool.py encode "Hello World" -o encoded.txt
-./b64tool.py decode -f encoded.txt -o decoded.txt
+./b64tool.py e "Hello World" -o encoded.txt
+./b64tool.py d -f encoded.txt -o decoded.txt
 ```
 
 ## Running Tests

@@ -50,7 +50,8 @@ def main() -> None:
         None
     """
     parser = argparse.ArgumentParser(description='Encode or decode Base64')
-    parser.add_argument('action', choices=['encode', 'decode'], help='Action to perform')
+    parser.add_argument('action', choices=['encode', 'e', 'decode', 'd'], 
+                        help='Action to perform (encode/e or decode/d)')
     parser.add_argument('text', nargs='?', help='Text to process')
     parser.add_argument('-f', '--file', help='Input from file instead of text argument')
     parser.add_argument('-o', '--output', help='Output file to save the result')
@@ -74,10 +75,10 @@ def main() -> None:
         parser.error("Either text argument or --file option is required")
 
     # Perform the requested action
-    if args.action == 'encode':
+    if args.action in ('encode', 'e'):
         result = encode_base64(input_text)
         output_prefix = "Encoded"
-    else:
+    else:  # 'decode' or 'd'
         result = decode_base64(input_text)
         output_prefix = "Decoded"
 
